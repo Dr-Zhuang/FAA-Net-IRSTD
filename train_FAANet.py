@@ -86,7 +86,7 @@ def main_loop(batch_size=config.batch_size, model_type='', tensorboard=True):
     lr = config.learning_rate
     logger.info(model_type)
 
-    #修改此处
+    #model type
     if model_type == 'FAA':
         config_vit = config.get_CTranS_config()
         logger.info('transformer head num: {}'.format(config_vit.transformer.num_heads))
