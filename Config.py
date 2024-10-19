@@ -30,7 +30,6 @@ learning_rate = 1e-4
 batch_size = 8
 
 model_name = 'FAA'
-#model_name = 'unet'
 
 train_dataset = './datasets/'+ task_name+ '/Train_Folder/'
 val_dataset = './datasets/'+ task_name+ '/Train_Folder/'
@@ -44,7 +43,7 @@ visualize_path     = save_path + 'visualize_val/'
 
 
 ##########################################################################
-# CTrans configs
+# Transformer configs
 ##########################################################################
 def get_CTranS_config():
     config = ml_collections.ConfigDict()
