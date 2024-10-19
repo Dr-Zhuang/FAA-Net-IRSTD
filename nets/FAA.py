@@ -23,8 +23,6 @@ class WMSA(nn.Module):
         self.type=type
         self.embedding_layer = nn.Linear(self.input_dim, 3*self.input_dim, bias=True)
 
-        # TODO recover
-        # self.relative_position_params = nn.Parameter(torch.zeros(self.n_heads, 2 * window_size - 1, 2 * window_size -1))
         self.relative_position_params = nn.Parameter(torch.zeros((2 * window_size - 1)*(2 * window_size -1), self.n_heads))
 
         self.linear = nn.Linear(self.input_dim, self.output_dim)
