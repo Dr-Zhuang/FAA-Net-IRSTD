@@ -16,8 +16,7 @@ construct a Frequency-aware Attention Module (FAM) that effectively suppresses n
 and enhances the features of small targets.
 
 ## Overall Framework
-![image]
-(https://github.com/Dr-Zhuang/FAA-Net-IRSTD/blob/main/framework.png)
+![image](https://github.com/Dr-Zhuang/FAA-Net-IRSTD/blob/main/framework.png)
 
 ## Usage
 
