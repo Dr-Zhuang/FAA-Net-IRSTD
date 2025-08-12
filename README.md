@@ -21,30 +21,50 @@ and enhances the features of small targets.
 ## Usage
 
 ### 1.Datasets
+
+The IRSTD dataset, which combines **NUAA-SIRST**, **NUDT-SIRST**, and **IRSTD-1K**, is used.
+* **NUAA-SIRST** &nbsp; [[download]](https://github.com/YimianDai/sirst) &nbsp; [[paper]](https://arxiv.org/pdf/2009.14530.pdf)
+* **NUDT-SIRST** &nbsp; [[download]](https://github.com/YeRen123455/Infrared-Small-Target-Detection) &nbsp; [[paper]](https://ieeexplore.ieee.org/abstract/document/9864119)
+* **IRSTD-1K** &nbsp; [[download dir]](https://github.com/RuiZhang97/ISNet) &nbsp; [[paper]](https://ieeexplore.ieee.org/document/9880295)
+  
 Our project has the following structure:
-
-datasets/NUDT(NUAA/IRSTD) 
-
---Train_Folder
-               
-               --img
-               
-               --labelcol
-
---Val_Folder
-               
-               --img
-               
-               --labelcol
-
---Test_Folder
-               
-               --img
-               
-               --labelcol
-
+```
+├──./datasets/
+  │    ├── IRSTD
+  │    │    ├── Train_Folder
+  │    │    │    ├── imng
+  │    │    │    ├── labelcol
+  │    │    ├── Val_Folder
+  │    │    │    ├── imng
+  │    │    │    ├── labelcol
+  │    │    ├── Test_Folder
+  │    │    │    ├── imng
+  │    │    │    ├── labelcol
+  │    ├── NUDT
+  │    │    ├── Train_Folder
+  │    │    │    ├── imng
+  │    │    │    ├── labelcol
+  │    │    ├── Val_Folder
+  │    │    │    ├── imng
+  │    │    │    ├── labelcol
+  │    │    ├── Test_Folder
+  │    │    │    ├── imng
+  │    │    │    ├── labelcol
+  │    ├── NUAA
+  │    │    ├── Train_Folder
+  │    │    │    ├── imng
+  │    │    │    ├── labelcol
+  │    │    ├── Val_Folder
+  │    │    │    ├── imng
+  │    │    │    ├── labelcol
+  │    │    ├── Test_Folder
+  │    │    │    ├── imng
+  │    │    │    ├── labelcol
+ ```
 
 ### 2.Configuration parameters in config.py
+
+
 
 ### 3.train
 
