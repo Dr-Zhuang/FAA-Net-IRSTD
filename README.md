@@ -64,10 +64,31 @@ Our project has the following structure:
 
 ### 2.Configuration parameters in config.py
 
-
-
 ### 3.train
-
-modify model_type 
+For example, to train the FAA model on the NUAA-SIRST dataset, modify the parameters in config.py accordingly.
+```
+task_name = 'NUAA'
+learning_rate = 1e-4
+batch_size = 8
+model_name = 'FAA'
+```
+Then, begin training: 
 
 python train_FAANet.py
+
+### 3.test and demo
+For example, to test the FAA model using the weight of NUAA-SIRST dataset, modify the parameters in config.py accordingly.
+```
+task_name = 'NUAA'
+learning_rate = 1e-4
+batch_size = 8
+model_name = 'FAA'
+
+test_session = "nuaa_Weight"##FAA weight
+```
+Then, begin testing: 
+
+python test_FAANet.py
+
+## Contact
+**Welcome to raise issues or email to [shuozhuang@hfut.edu.cn](shuozhuang@hfut.edu.cn) for any question regarding our work.**
