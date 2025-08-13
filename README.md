@@ -76,7 +76,7 @@ Then, begin training:
 
 python train_FAANet.py
 
-### 3.test
+### 3.test and evaluation
 For example, to test the FAA model using the weight of NUDT-SIRST dataset, modify the parameters in config.py accordingly.
 ```
 task_name = 'NUDT'
