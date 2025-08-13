@@ -101,7 +101,7 @@ For example,
 ```
 python demo.py --img 000133.png --weights nudt.pth.tar
 ```
-the predicted result will be save in "single_pred".
+the predicted results will be saved in the "single_pred" folder.
 
 The well-trained weight can be obtained from the following link:
 1) https://pan.baidu.com/s/1vgcmo_IUayx4hbSU5H0u3Q?pwd=uabr 提取码: uabr
