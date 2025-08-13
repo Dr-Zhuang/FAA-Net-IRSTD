@@ -65,9 +65,9 @@ Our project has the following structure:
 ### 2.Configuration parameters in config.py
 
 ### 3.train
-For example, to train the FAA model on the NUAA-SIRST dataset, modify the parameters in config.py accordingly.
+For example, to train the FAA model on the NUDT-SIRST dataset, modify the parameters in config.py accordingly.
 ```
-task_name = 'NUAA'
+task_name = 'NUDT'
 learning_rate = 1e-4
 batch_size = 8
 model_name = 'FAA'
@@ -76,19 +76,37 @@ Then, begin training:
 
 python train_FAANet.py
 
-### 3.test and demo
-For example, to test the FAA model using the weight of NUAA-SIRST dataset, modify the parameters in config.py accordingly.
+### 3.test
+For example, to test the FAA model using the weight of NUDT-SIRST dataset, modify the parameters in config.py accordingly.
 ```
-task_name = 'NUAA'
+task_name = 'NUDT'
 learning_rate = 1e-4
 batch_size = 8
 model_name = 'FAA'
-
-test_session = "nuaa_Weight"##FAA weight
+```
+And, modify the parameters in test_FAANet.py accordingly.
+```
+test_num = 664
+model_path = "nudt.pth.tar"
 ```
 Then, begin testing: 
-
+```
 python test_FAANet.py
+```
+### 4.Demo
+```
+python demo.py --img /path/to/img.png --weights nudt.pth.tar
+```
+For example,
+```
+python demo.py --img 000133.png --weights nudt.pth.tar
+```
+the predicted result will be save in "single_pred".
+
+The well-trained weight can be obtained from the following link:
+1) https://pan.baidu.com/s/1vgcmo_IUayx4hbSU5H0u3Q?pwd=uabr 提取码: uabr
+
+2) https://drive.google.com/file/d/19ysdlzZpAdQaeOtJPBtn3f_gjjd8ayLl/view?usp=sharing
 
 ## Contact
 **Welcome to raise issues or email to [shuozhuang@hfut.edu.cn](shuozhuang@hfut.edu.cn) for any question regarding our work.**
