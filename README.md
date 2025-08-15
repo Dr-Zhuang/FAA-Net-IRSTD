@@ -103,10 +103,20 @@ python demo.py --img 000133.png --weights nudt.pth.tar
 ```
 The predicted results will be saved in the "single_pred" folder.
 
-The well-trained weight can be obtained from the following link:
+The well-trained weight (NUAA-SIRST) can be obtained from the following link:
+1) https://pan.baidu.com/s/1IylcnukpmLVNJ9FA4OVXgQ?pwd=v5ce 提取码: v5ce
+
+2) https://drive.google.com/file/d/1xOmBA5CIDKfepr5UTissTbRTZdL1ooXm/view?usp=sharing
+
+The well-trained weight (NUDT-SIRST) can be obtained from the following link:
 1) https://pan.baidu.com/s/1vgcmo_IUayx4hbSU5H0u3Q?pwd=uabr 提取码: uabr
 
 2) https://drive.google.com/file/d/19ysdlzZpAdQaeOtJPBtn3f_gjjd8ayLl/view?usp=sharing
 
+The well-trained weight (IRSTD-1K) can be obtained from the following link:
+1) https://pan.baidu.com/s/1lrJIIgqc19d3plBiakkhfg?pwd=h3bc 提取码: h3bc
+
+2) https://drive.google.com/file/d/1fKA_ulrhuTAHOEINE10swisFuY-SH8hX/view?usp=sharing
+   
 ## Contact
 **Welcome to raise issues or email to [shuozhuang@hfut.edu.cn](shuozhuang@hfut.edu.cn) for any question regarding our work.**
