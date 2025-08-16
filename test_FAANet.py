@@ -75,18 +75,7 @@ if __name__ == '__main__':
             arr=test_data.numpy()
             arr = arr.astype(np.float32())
             lab=test_label.data.numpy()
-            img_lab = np.reshape(lab, (lab.shape[1], lab.shape[2])) * 255
-            fig, ax = plt.subplots()
-            plt.imshow(img_lab, cmap='gray')
-            plt.axis("off")
-            height, width = config.img_size, config.img_size
-            fig.set_size_inches(width / 100.0 / 3.0, height / 100.0 / 3.0)
-            plt.gca().xaxis.set_major_locator(plt.NullLocator())
-            plt.gca().yaxis.set_major_locator(plt.NullLocator())
-            plt.subplots_adjust(top=1, bottom=0, left=0, right=1, hspace=0, wspace=0)
-            plt.margins(0, 0)
-            plt.savefig(vis_path+'gt/'+str(i)+".png", dpi=300)
-            plt.close()
+            
             input_img = torch.from_numpy(arr)
             dice_pred_t,iou_pred_t = vis_and_save_heatmap(model, input_img, None, lab, vis_path+'pred/'+str(i),
                                                dice_pred=dice_pred, dice_ens=dice_ens)
