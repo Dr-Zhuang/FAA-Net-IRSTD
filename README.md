@@ -1,5 +1,8 @@
 # FAA-Net: A Frequency-Aware Attention Network for Single-Frame Infrared Small Target Detection
 Shuo Zhuang, Yongxing Hou, Meibin Qi, and Di Wang
+
+Zhuang S, Hou Y, Qi M, et al. FAA-Net: A Frequency-Aware Attention Network for Single-Frame Infrared Small Target Detection[J]. IEEE Transactions on Instrumentation and Measurement, 2025.
+
 ## Introduction
 Existing detection methods primarily focus on extracting local spatial features, while overlooking the differences between targets and background in the frequency domain. To address this limitation, we propose a Frequency-Aware Attention Network (FAA-Net) for IRSTD.
 
